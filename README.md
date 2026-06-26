@@ -1,0 +1,2 @@
+# lakmia-perdiste-queque-
+lakmia 
