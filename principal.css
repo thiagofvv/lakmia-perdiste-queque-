@@ -1,0 +1,39 @@
+details {
+    position: sticky;
+    top: 0;
+    background: #111;
+    color: white;
+    width: 300px;
+    background: #337e91;
+    color: #000000;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none; /* Oculta la flechita predeterminada */
+}
+
+details a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+details a:hover {
+    color: #ff4444;
+}
+
+#titulo{
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-family: sans-serif;
+    padding: 15px;
+    background-color: #337e91;
+}
