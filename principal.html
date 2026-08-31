@@ -7,29 +7,98 @@
     <link rel="stylesheet" href="/principal.css">
 </head>
 <header>
+<details class="menu">
+    <summary>
+        <img src="/img/logo sin fondo.png" height="110" width="110"> <img src="/img/nombre marca sin fondo.png" height="100" width="250">
+    </summary>
+
+    <div class="menu-contenido">
+        <a href="#"><h2>seccion</h2></a>
+        <a href="#"><h2>seccion</h2></a>
+        <a href="#"><h2>seccion</h2></a>
+        <a href="#"><h2>seccion</h2></a>
+    </div>
+    </details>
+
+    <h1>Clima Cutral-Có/Plaza Huincul</h1>
+
 </header>
+
+<script>
+    let ultimaPosicion = window.scrollY;
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+        const posicionActual = window.scrollY;
+
+        if (posicionActual > ultimaPosicion) {
+            // Bajando
+            header.classList.add("oculto");
+        } else {
+            // Subiendo
+            header.classList.remove("oculto");
+        }
+
+        ultimaPosicion = posicionActual;
+    });
+</script>
+
+<!-- Elfsight Weather | Untitled Weather -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+
 <body>
-    <h1>hola</h1>
-    <h1>chau</h1>
-    <h1>hola</h1>
-    <h1>chau</h1>
-    <h1>hola</h1>
-    <h1>chau</h1>
-    <h1>hola</h1>
-    <h1>chau</h1>
-    <h1>hola</h1>
-    <h1>chau</h1>
-    <h1>hola</h1>
-    <h1>chau</h1>
-    <h1>hola</h1>
-    <h1>chau</h1>
-    <h1>hola</h1>
-    <h1>chau</h1>
-    <h1>hola</h1>
-    <h1>chau</h1>
-    <h1>hola</h1>
-    <h1>chau</h1>
-    
-    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<!--<div id="tarjetas">
+<div class="tarjetas">
+        <div class="tarjeta">
+            <h3>Hoy</h3>
+            <p><h6>28 Ago</h6></p>
+            <img src="/img/3.svg" alt="Se rompio la foto crack" height="125" width="50">
+            <div class="data">
+            </div>
+        </div>
+        <div class="tarjeta">
+            <h3>Mañana</h3>
+            <p><h6>29 Ago</h6></p>
+            <img src="/img/3.svg" alt="Se rompio la foto crack" height="125" width="50">
+            <div class="data">
+            </div>
+        </div>
+        <div class="tarjeta">
+            <h3>Domingo</h3>
+            <p><h6>30 Ago</h6></p>
+            <img src="/img/3.svg" alt="Se rompio la foto crack" height="125" width="50">
+            <div class="data">
+            </div>
+        </div>
+        <div class="tarjeta">
+            <h3>Lunes</h3>
+            <p><h6>31 Ago</h6></p>
+            <img src="/img/3.svg" alt="Se rompio la foto crack" height="125" width="50">
+            <div class="data">
+            </div>
+        </div>
+        <div class="tarjeta">
+            <h3>Martes</h3>
+            <p><h6>1 SEP</h6></p>
+            <img src="/img/3.svg" alt="Se rompio la foto crack" height="125" width="50">
+            <div class="data">
+            </div>
+        </div>
+</div>
+</div> -->
+
+<div class="elfsight-app-afa4978d-6bd1-4805-9724-b69c3b835f5a" data-elfsight-app-lazy></div>
 </body>
 </html>

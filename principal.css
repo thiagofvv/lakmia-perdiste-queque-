@@ -1,39 +1,110 @@
-details {
-    position: sticky;
+header {
+    height: 110px;
+    background-color: #367f91;
+    position: fixed;
     top: 0;
-    background: #111;
-    color: white;
-    width: 300px;
-    background: #337e91;
-    color: #000000;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    
+    transition: transform 0.3s ease;
 }
 
-summary {
-    cursor: pointer;
-    font-weight: bold;
+header.oculto {
+    transform: translateY(-100%);
+}
+
+header h2 {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header h1 {
+    color: #367f91;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+/* Botón RadarTech */
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu summary {
     list-style: none;
+    cursor: pointer;
+    height: 110px;
 }
 
 summary::-webkit-details-marker {
     display: none; /* Oculta la flechita predeterminada */
 }
 
-details a {
+/*.menu summary img {
+    height: 110px;
+    width: auto;
     display: block;
-    color: black;
-    text-decoration: none;
-    margin-top: 8px;
-}
+}*/
 
-details a:hover {
-    color: #ff4444;
-}
-
-#titulo{
-    text-align: center;
-    margin: auto;
-    color: white;
-    font-family: sans-serif;
+.menu-contenido {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 150px;
+    background-color: #367f91;
     padding: 15px;
-    background-color: #337e91;
+    z-index: 10;
+}
+
+.menu-contenido a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.tarjetas img{
+    justify-content: center;
+    width: 150px;   
+}
+.tarjeta {
+    text-align: center;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    transform:translate(-5px); 
+}
+
+.tarjeta:hover {
+transform:translateY(-5px); 
+}
+
+body{
+    background-color: #dadada;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    margin-bottom: 1px;
+}
+
+#elfsight-app-afa4978d-6bd1-4805-9724-b69c3b835f5a {
+    justify-content: center;
 }
